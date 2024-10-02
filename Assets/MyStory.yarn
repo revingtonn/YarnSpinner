@@ -1,0 +1,242 @@
+﻿title: Start
+tags:
+position: 298,-336
+---
+Bartender: Hey REDACTED, you made it!
+Bartender: Looking for more work I assume?
+    -> Unknown Man: Of course. I don't drink after all.
+        <<jump Bounty>>
+===
+title: Bounty
+position: 299,-126
+---
+Bartender: I just got the job for you, you'll love it.
+Bartender: Here, take a look.
+    -> Take bounty 
+        Bartender: The targets name is John Simmons.
+        Bartender: No one knows where he lives or where he goes.
+        Bartender: He's only been seen a handful of times over the past decade.
+        Bartender: The only depiction of what he looks like is the one right in front of you.
+        Why does he look familiar? Have I seen him before?
+        Bartender: Rumour says he's been around the whole world.
+        Bartender: Who knows if you'll even find him here.
+            -> Unknown Man: Much obliged, old friend.
+                Bartender: Oh, you know me, anytime.
+                Bartender: Oh, before you go, when do I expect I'll see you next?
+                    -> Unknown Man: Who knows.
+                        <<jump Leaving>>
+===
+title: Leaving
+position: 299,90
+---
+The man gets up from the bar to leave.
+Just as he opens the door and steps outside, he finds himself no longer anywhere near the saloon he just exited.
+He's now falling out of the sky, above a bustling city.
+The unknown man falls onto the roof of a tall building, stunned by his new surroundings.
+Unknown Man: Where the hell am I??
+Unknown Man: What the hell just happened??
+The unknown man turns around to find one other person on the roof, astounded from what they witnessed.
+???: You speak English????
+    -> Unknown Man: YOU speak English???
+        Unknown Man: Where am I??
+        Unknown Man: And who are YOU???
+        ???: YES I SPEAK ENGLISH!!
+        Unknown Man: WHY ARE WE BOTH YELLING??
+        ???: Okay, let's stop shouting.
+        Takeo: My name is Takeo, and you are?
+            -> Unknown Man: I don't have a name.
+                Unknown Man: Also, where the hell are we?
+                    <<jump Tokyo>>
+===
+title: Tokyo
+position: 299,341
+---
+Takeo: We're in Tokyo, you've never heard of here before?
+Takeo: It's the most technologically advanced city on the planet.
+    -> Unknown Man: Te-tek, tekno-what now?
+        Takeo: You know, technology.
+        Takeo: Come on man, it's 2024 how do you not know what technology is?
+            -> Unknown Man: I'm sorry it's what year? 2024??
+                Takeo: Yeah it's 2024 why?
+                    -> Unknown Man: Last time I checked it was 1809.
+                        Unknown Man: Actually, it was 1809 just a few minutes ago.
+                        Unknown Man: I was picking up a job from the local saloon and then ended up here.
+                        Takeo: Well, that's sure something huh.
+                        Takeo: Uh, I can give you a tour of the city if you want.
+                            -> Unknown Man: Much obliged.
+                                <<jump Tour>>
+                            -> Unknown Man: I just want to find a way out of here.
+                                <<jump Farewell>>
+===
+title: Tour
+position: 630,340
+---
+The man and his new companion tour around the city.
+Takeo shows him the best places to buy clothes and food.
+The unknown man, overwhelmed by the bustling streets of Tokyo, asks Takeo if they can stop to rest.
+Unknown Man: Hey Takeo?
+    -> Unknown Man: Can we stop somewhere to rest?
+        Unknown Man: This is all so much to take in and experience.
+        Takeo: Sure there's a good spot not too far from here we can stop at.
+            -> Unknown Man: Much obliged.
+                <<jump Shrine>>
+===
+title: Farewell
+position: 299,565
+---
+Takeo: I can show you the exits of the city
+Takeo: Maybe one of them is in the direction you want to go.
+    -> Unknown Man: Much obliged.
+        Takeo shows the man the various exits of Tokyo.
+        The man decides to leave through one at random and continue in that direction.
+        The man sees a cave in a mountain to his right, and a small country side town on his left.
+            -> To the mountain cave.
+                <<jump CaveEntrance>>
+            -> To the small town.
+                <<jump SmallTown>>
+===
+title: Shrine
+position: 981,340
+---
+The unknown man and Takeo sit down at the Meiji-Jingu Shrine to chat.
+Takeo: So, what do you think of the city?
+    -> Unknown Man: It's all so different than what I'm used to.
+        Unknown Man: All the stores, the restaurants..., everything.
+        Takeo: I can understand that, you came from a small town in the west over 200 years ago.
+        Takeo: That time was very different from how it is now.
+        Takeo: If you want, we can do something together another time.
+        Takeo: Maybe we could go to an arcade.
+            -> Unknown Man: An arcade?
+                Takeo: Yeah, it's a place you go to play games.
+                Takeo: I can explain that when the time comes, I guess.
+                    -> Unknown Man: Much obliged.
+                        The unknown man now spends his time exploring the city until he hears from Takeo.
+===
+title: SmallTown
+position: 76,755
+---
+As the unknown man approaches the small town he can hear the sound of distant music.
+The music is soothing to him, and reminds him of the saloon.
+    -> Enter the town and look for the source of the music.
+        The man wanders around the town in the direction of the music.
+        When he finds the source of the sound, he is greeted with nothing other than the saloon.
+            -> Unknown Man: What the hell???
+                Unknown Man: What's the saloon doing here??
+                    -> Enter the saloon.
+                        <<jump Saloon>>                  
+    -> Turn towards the cave entrance
+        <<jump CaveEntrance>>
+===
+title: CaveEntrance
+position: 453,746
+---
+As the unknown man approaches the cave entrance he can hear the sound of chanting.
+    -> Follow the chanting.
+        <<jump CaveInterior>>
+    -> Turn towards the small town
+        <<jump SmallTown>>
+===
+title: Saloon
+position: 76,993
+---
+It is indeed the same saloon he had visited earlier that day.
+    Bartender: Oh-ho, look who's back, and so soon.
+        -> Unknown Man: Some really strange things have happened to me today.
+            Unknown Man: When I left here earlier I didn't come out on the outside of the saloon like normal.
+            Unknown Man: I started to fall from the sky in a place I had never seen before.
+            Bartender: You fell from the sky???
+            Bartender: And in a place you have never seen before??
+            Bartender: That's rare, you've been almost everywhere.
+                -> Unknown Man: Yeah it was really strange.
+                    Unknown Man: While I was there I met someone who showed me how to leave the place.
+                    Unknown Man: I started walking out of the city, when I noticed a small town and heard music.
+                    Unknown Man: I followed the music to here.
+                    Bartender: You've had quite the day by the sounds of it.
+                    Bartender: Maybe this'll get you to drink with us.
+                    Bartender: How about it?
+                        -> Unknown Man: After today, I think I need it.
+                            Bartender: Well how about that, never thought you would cave in.
+                            Bartender: Here, my signature drink.
+                            Bartender: You're sure to like it.
+                        -> Unknown Man: No thanks, I'd like to keep my track record clean.
+                            Bartender: No harm done friend.
+                            Bartender: Can still have a good time without booze.
+                            Bartender: You would know that very well.
+===
+title: CaveInterior
+position: 453,995
+---
+Intrigued by the chanting he continues towards the cave.
+The man walks towards a light in the cave, trying his best to be as quiet as possible.
+The man finds an small but open room with what appears to be a cult ritual of some kind.
+    Unknown Man: What the hell is this?
+    Unknown Man: I get the feeling I should stop it, but how?
+        -> Jump in and halt the ritual.
+            Unknown Man: Alright, it's now or never.
+            The man jumps into the room, revolver in hand and ready to fight.
+            The cultists engage in a battle.
+            Unknown Man: Bring it on!
+            The man prevails triumphant over the cultists, though injured slightly.
+            Unknown Man: It looks like they were sacrificing something in here.
+                -> Take a look around.
+                    The man looks at the various spellbooks and runes around the room.
+                    He stops to look at a large cauldron in the middle of the room.
+                    Unknown Man: Ah gross!
+                    Unknown Man: There's a dead body in here.
+                    Unknown Man: So they really were sacrificing someone.
+                        -> Look at the remains.
+                            The unknown man grabs what appears to be the only thing left intact, the head.
+                            The unknown man stares in astonishment.
+                            Unknown Man: This- This is my bounty target!
+                            Unknown Man: Wasn't he from my time??
+                            -> Take the head.
+                                Unknown Man: I should see if I can still claim the bounty reward with this.
+                                Unknown Man: If I can find a way back to the saloon, that is.
+                                    -> Leave the cave.
+                                        <<jump CaveExit>>
+                        -> Leave the body be.
+                            Unknown Man: Best to not touch that.
+                            Unknown Man: I should leave now, I think I've seen enough strange stuff for a lifetime.
+===
+title: CaveExit
+position: 453,1250
+---
+Unknown Man: I should head to that town now.
+Unknown Man: Maybe there's someone there I can talk to about that cave.
+As the man approaches the town he hears the sound of distant music.
+The music reminds him of the saloon and the west.
+Interested by this, the man walks towards the town even faster.
+When the man gets to the town, he walks in the direction of the music.
+Unknown Man: What?? This can't be!!
+Unknown Man: This is the saloon! But what is it doing here??
+Unknown Man: Is it related to how I got here?
+    -> Unknown Man: I should go in and check it out.
+        When the man opens the door, he finds the saloon in its normal state.
+        It's lively and full of drunken cowboys as usual.
+        Unknown Man: How does any of this make sense...?
+            -> Walk up to the bar.
+                Bartender: Oh-ho, look who's back, and so soon.
+                    -> Unknown Man: Some really strange things have happened to me today.
+                        Unknown Man: When I left here earlier I didn't come out on the outside of the saloon like normal.
+                        Unknown Man: I started to fall from the sky in a place I had never seen before.
+                        Unknown Man: Then I went into a cave and stopped some kind of ritual.
+                        Bartender: You fell from the sky???
+                        Bartender: And in a place you have never seen before??
+                        Bartender: That's rare, you've been almost everywhere.
+                        Bartender: And you stopped a ritual??
+                            -> Unknown Man: Yeah it was really strange.
+                                Unknown Man: While I was there I met someone who showed me how to leave the place.
+                                Unknown Man: I started walking out of the city, when I noticed a small town and heard music.
+                                Unknown Man: I followed the music to here.
+                                Bartender: You've had quite the day by the sounds of it.
+                                Bartender: Maybe this'll get you to drink with us.
+                                Bartender: How about it?
+                                Unknown Man: No thanks, I'd like to keep my track record clean.
+                            -> Unknown Man: I even grabbed the head of the person they were sacrificing.
+                                Unknown Man: And that person just so happened to be the bounty target.
+                                The man places the head on the bar.
+                                Bartender: Holy Stellar Dust and Six Shooters, it really is him.
+                                Bartender: He looks just like the wanted posters.
+                                Bartender: Well you did bring the head of the target here... so I guess I have to pay you now.
+                                    -> Unknown Man: Much obliged.
+===
